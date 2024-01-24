@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    background-color: blue;
+    width: 640px; /* change this back to 640  */
+    flex-wrap: wrap;
+}
+
+.squares {
+    width: 160px;
+    height: 160px;
+}
