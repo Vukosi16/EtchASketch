@@ -1,8 +1,20 @@
+.outerContainer {
+    display: flex;
+}
+
 .container {
     display: flex;
     background-color: blue;
     width: 640px; /* change this back to 640  */
     flex-wrap: wrap;
+}
+
+.promptDiv {
+    flex: 1;
+}
+
+.button {
+
 }
 
 .squares {

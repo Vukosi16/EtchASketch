@@ -6,18 +6,7 @@ for (i = 1; i <= 16; i++) {
     square.setAttribute('class', 'squares');
     container.appendChild(square);
 
-    square.onmouseover = () => square.style.backgroundColor = "red";
+    square.onmouseover = function() {square.style.backgroundColor = "red"; };
     square.onmouseout = () => square.style.backgroundColor = "";
-
-
-
-
-
-
-
-
-
-
 }
-
 
