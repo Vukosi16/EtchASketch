@@ -2,8 +2,15 @@ const container = document.querySelector('.container');
 const button = document.querySelector('.button');
 
 button.addEventListener('click', function() {
-    const userInput = prompt("Enter number of squares in a line you want: ");
-    gridNumber = parseInt(userInput); 
+    let gridNumber;
+
+    do {
+        const userInput = prompt("Enter number of squares in a line you want (less than 100): ");
+        gridNumber = parseInt(userInput); 
+    } while (isNaN(gridNumber) || gridNumber >= 101 || gridNumber < 0);
+
+    
+        
 
     const gridSize = gridNumber * gridNumber;
 
@@ -35,7 +42,6 @@ button.addEventListener('click', function() {
         container.appendChild(square);
 
         square.onmouseover = function() {square.style.backgroundColor = `${pen}`; };
-        buttonClear.addEventListener('click', () => square.style.backgroundColor = 'white');
     }
 
     
