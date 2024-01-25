@@ -1,23 +1,43 @@
 .outerContainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     display: flex;
-    background-color: blue;
-    width: 640px; /* change this back to 640  */
     flex-wrap: wrap;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: black;
 }
 
 .promptDiv {
+    padding-bottom: 45px;
     flex: 1;
 }
 
-.button {
 
-}
 
 .squares {
-    width: 160px;
-    height: 160px;
+    width: 6.5px;
+    height: 6.5px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.buttonClear {
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 10px;
 }
